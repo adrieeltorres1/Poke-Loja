@@ -7,7 +7,7 @@ const cartItems = []; // Array para armazenar itens no carrinho
 async function listPokemonWithDetails() {
   try {
     // Faz uma solicitação assíncrona para a API do Pokémon
-    const response = await fetch("https://pokeapi.co/api/v2/pokemon?limit=50");
+    const response = await fetch("https://pokeapi.co/api/v2/pokemon?limit=100");
     if (response.ok) {
       // Se a resposta for bem-sucedida, converte-a para JSON
       const data = await response.json();
